@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Weather forecast service";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Actual forecasts for free!</h1>
+    <p>Select city and input date, then press "Get forecast".</p>
+</div>
+
+<div>
+    <center>
+    <form method="get">
+        <table width = "40%" align="center">
+                <tr>
+                    <td width="50%">Input city:</td>
+                    <td width="50%">
+                            <select name="cityName">
+                                @foreach(var city in Model.Cities)
+                                {
+                                    <option value="@city.Name">@city.Name</option>                                           
+                                }
+                            </select>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Input date:</td>
+                    <td><input type="date" name="date" value="@Model.SelectedDate" /> </td>
+                </tr>
+        </table>
+        <br/>
+        <input type="submit" value="Get forecast" />
+    </form>
+    </center>
+</div> 
+
+<br />
+
+
+    @if(Model != null)
+    {
+        if (Model.Forecast != null)
+        {
+        <partial name="_WeatherForecastPartial" model="@Model"/>
+    }
+    else if(Model.Message != null)
+    {
+        <center><p>@Model.Message</p></center>
+    }
+}

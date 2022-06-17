@@ -1,0 +1,30 @@
+﻿@using WApp.Repository
+@model ForecastViewModel
+
+<center><p>Weather in @Model.SelectedCity at @DateOnly.Parse(Model.SelectedDate)</p></center>
+<table width = "40%" align="center">
+        <tr>
+            <td style="width:50%">
+                    <b>Temprerature</b>
+            </td>
+            <td style="width:50%">
+                    <b>Summary</b> 
+            </td>
+       </tr>
+        <tr>
+        @{
+            var itemColor = "green";
+
+            if (Model.Forecast.TemperatureC > 25)
+                itemColor = "red";
+            else if (Model.Forecast.TemperatureC < 5)
+                itemColor = "blue";
+            }
+            <td style="width:50%; color: @itemColor">
+                @Model.Forecast.TemperatureC
+            </td>
+            <td style="width:50%">
+                    @Model.Forecast.Summary
+            </td>
+       </tr>
+</table>
