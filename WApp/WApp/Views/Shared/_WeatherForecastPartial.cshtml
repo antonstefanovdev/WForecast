@@ -8,23 +8,23 @@
                     <b>Temprerature</b>
             </td>
             <td style="width:50%">
-                    <b>Summary</b> 
+                    <b>Wind speed</b> 
             </td>
        </tr>
         <tr>
         @{
             var itemColor = "green";
 
-            if (Model.Forecast.TemperatureC > 25)
+            if (Model.Forecast.TemperatureDayC > 25)
                 itemColor = "red";
-            else if (Model.Forecast.TemperatureC < 5)
+            else if (Model.Forecast.TemperatureDayC < 5)
                 itemColor = "blue";
             }
             <td style="width:50%; color: @itemColor">
-                @Model.Forecast.TemperatureC
+                @Model.Forecast.TemperatureDayC (@Model.Forecast.TemperatureNightC at night)
             </td>
             <td style="width:50%">
-                    @Model.Forecast.Summary
+                    @Model.Forecast.WindSpeed
             </td>
        </tr>
 </table>

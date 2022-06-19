@@ -10,20 +10,23 @@ namespace WApi.Repository
         public int Id { get; set; }
         public int CityId { get; set; }
         public DateTime Date { get; set; }
-        public int TemperatureC { get; set; }
+        public int TemperatureDayC { get; set; }
+        public int TemperatureNightC { get; set; }
 
-        public string Summary { get; set; } = string.Empty;
+        public int WindSpeed { get; set; }
         public WeatherForecast(
             int cityId,
             DateTime date,
-            int temperatureC,
-            string summary
+            int temperatureDayC,
+            int temperatureNightC,
+            int windSpeed
             )
         {
             CityId = cityId;
             Date = date;
-            TemperatureC = temperatureC;
-            Summary = summary;
+            TemperatureDayC = temperatureDayC;
+            TemperatureNightC = temperatureNightC;
+            WindSpeed = windSpeed;
         }
     }
 }

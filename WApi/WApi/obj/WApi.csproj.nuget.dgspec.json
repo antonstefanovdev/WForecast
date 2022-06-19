@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\natal\\Desktop\\TestW\\WApi\\WApi\\WApi.csproj": {}
+    "C:\\Users\\stefanov\\Desktop\\test\\WApi\\WApi\\WApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\natal\\Desktop\\TestW\\WApi\\WApi\\WApi.csproj": {
+    "C:\\Users\\stefanov\\Desktop\\test\\WApi\\WApi\\WApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\natal\\Desktop\\TestW\\WApi\\WApi\\WApi.csproj",
+        "projectUniqueName": "C:\\Users\\stefanov\\Desktop\\test\\WApi\\WApi\\WApi.csproj",
         "projectName": "WApi",
-        "projectPath": "C:\\Users\\natal\\Desktop\\TestW\\WApi\\WApi\\WApi.csproj",
-        "packagesPath": "C:\\Users\\natal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\natal\\Desktop\\TestW\\WApi\\WApi\\obj\\",
+        "projectPath": "C:\\Users\\stefanov\\Desktop\\test\\WApi\\WApi\\WApi.csproj",
+        "packagesPath": "C:\\Users\\stefanov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\stefanov\\Desktop\\test\\WApi\\WApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\natal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\stefanov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +44,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "IKVM": {
+              "target": "Package",
+              "version": "[8.1.5717, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.29, )"

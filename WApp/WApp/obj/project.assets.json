@@ -48,19 +48,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\natal\\.nuget\\packages\\": {}
+    "C:\\Users\\Knight\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natal\\Desktop\\TestW\\WApp\\WApp\\WApp.csproj",
+      "projectUniqueName": "C:\\repo\\WForecast\\WApp\\WApp\\WApp.csproj",
       "projectName": "WApp",
-      "projectPath": "C:\\Users\\natal\\Desktop\\TestW\\WApp\\WApp\\WApp.csproj",
-      "packagesPath": "C:\\Users\\natal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\natal\\Desktop\\TestW\\WApp\\WApp\\obj\\",
+      "projectPath": "C:\\repo\\WForecast\\WApp\\WApp\\WApp.csproj",
+      "packagesPath": "C:\\Users\\Knight\\.nuget\\packages\\",
+      "outputPath": "C:\\repo\\WForecast\\WApp\\WApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\natal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Knight\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -109,7 +109,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

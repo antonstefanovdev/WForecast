@@ -65,7 +65,8 @@ namespace WApi.Services
                                     city.Id,
                                     date.AddDays(days),
                                     _random.Next(54) - 25,
-                                    MainSummaries.summary[_random.Next(MainSummaries.count)]
+                                    _random.Next(43) - 18,
+                                    _random.Next(18)
                                     ));
                         }
 

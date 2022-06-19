@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.ObjectPool;
 using WApi.Repository;
 using WApi.Services;
 
@@ -28,9 +29,11 @@ namespace WApi.Controllers
 
         [HttpGet]
         [Route("[action]")]
+        [ResponseCache(VaryByHeader = "User-Agent", Duration = 600)]
         public async Task<IEnumerable<City>> GetCitiesAsync()
         {
             await _seed.InitDatabaseAsync();
+
             try
             {
                 var cities = await _context.Cities.ToListAsync();
@@ -41,7 +44,6 @@ namespace WApi.Controllers
                         "There is no cities in database",
                         "GetCitiesAsync cannot found any city in database");
                 }
-
                 return cities;
             }
             catch
@@ -56,6 +58,7 @@ namespace WApi.Controllers
        
         [HttpGet]
         [Route("[action]/{cityId}/{date}")]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public async Task<IEnumerable<WeatherForecast>> GetForecastAsync
             (
             int cityId, 

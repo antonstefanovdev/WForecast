@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XarV3moIaE5DPWtQ5MtsUlK1EiakXHucV5/e51HHO1vpqH5yiHZQpA7laDZ647nzDb/3T/qmwNph9/TRyPKQfA==",
+  "dgSpecHash": "Bs33TPbMuLiJ04mqnjIMH879Ti/xO6tPxAWyJId1z1AT8dnIRHuCVGKSkmY8Y5BKSaF2rGDEfWcFMJLCixxKzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\natal\\Desktop\\TestW\\WApp\\WApp\\WApp.csproj",
+  "projectFilePath": "C:\\repo\\WForecast\\WApp\\WApp\\WApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\natal\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\Knight\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

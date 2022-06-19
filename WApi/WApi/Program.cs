@@ -1,3 +1,6 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.ObjectPool;
+using System.Text;
 using WApi.Repository;
 using WApi.Services;
 
@@ -15,6 +18,12 @@ builder.Services.AddTransient<ApplicationContext>();
 builder.Services.AddTransient<SeedService>();
 builder.Services.AddTransient<Random>();
 
+builder.Services.AddResponseCaching();
+
+builder.Services.AddWebEncoders();
+
+// Build app
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -29,5 +38,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
